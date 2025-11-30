@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Movie List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="fade-in">🎬 My Movie List</h1>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="1">Bollywood</option>
+            <option value="2">Hollywood</option>
+            <option value="3">Pakistani Cinema</option>
+        </select>
+        <button onclick="loadMovies()">Filter</button>
+    </div>
+
+    <!-- Movies Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Movie Name</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody id="movieTable"></tbody>
+    </table>
+
+    <h2>Add New Movie</h2>
+
+    <!-- Add Movie Form -->
+    <form id="movieForm">
+        <input type="text" id="movieName" placeholder="Enter movie name">
+        <select id="movieCategory">
+            <option value="1">Bollywood</option>
+            <option value="2">Hollywood</option>
+            <option value="3">Pakistani Cinema</option>
+        </select>
+        <button type="submit">Add Movie</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
